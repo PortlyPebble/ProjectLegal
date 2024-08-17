@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/index.css') }}" type="text/css">
+    <script src="{{ url_for('static', filename='javascript/index.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" name="chat" id="chat" placeholder="Input lawsuit here..">
+        <button onclick="question()">Search</button>
+        <div class="spinner" id="spinner"></div>
+    </div>
+</body>
+</html>
